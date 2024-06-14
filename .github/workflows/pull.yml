@@ -11,16 +11,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  unimported:
-    name: Check unimported
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: whopio/unimported-action@v0.0.1
-        with:
-          token: ${{ github.token }}
-          projects: "packages/codegen,packages/runtime"
-
   install:
     name: Install node modules
     runs-on: ubuntu-latest
