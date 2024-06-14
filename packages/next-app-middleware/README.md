@@ -124,9 +124,7 @@ npm install @cxnpl/next-app-middleware --save-dev
 const { withMiddleware } = require("@cxnpl/next-app-middleware");
 
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  // your next.js config
 };
 
 module.exports = withMiddleware(nextConfig);
