@@ -16,9 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7.13.6
+      - uses: pnpm/action-setup@v3
       - name: Setup node
         uses: actions/setup-node@v3
         with:
@@ -34,9 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7.13.6
+      - uses: pnpm/action-setup@v3
       - name: Setup node
         uses: actions/setup-node@v3
         with:
@@ -54,9 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7.13.6
+      - uses: pnpm/action-setup@v3
       - name: Setup node
         uses: actions/setup-node@v3
         with:
@@ -74,9 +68,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7.13.6
+      - uses: pnpm/action-setup@v3
       - name: Setup node
         uses: actions/setup-node@v3
         with:
