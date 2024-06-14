@@ -25,14 +25,12 @@ jobs:
           token: ${{ github.token }}
       - uses: actions/checkout@v3
         if: steps.check.outputs.can-publish == 'true'
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7.13.6
+      - uses: pnpm/action-setup@v3
         if: steps.check.outputs.can-publish == 'true'
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
           check-latest: true
           cache: pnpm
         if: steps.check.outputs.can-publish == 'true'

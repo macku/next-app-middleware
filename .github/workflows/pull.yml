@@ -11,28 +11,16 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  unimported:
-    name: Check unimported
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: whopio/unimported-action@v0.0.1
-        with:
-          token: ${{ github.token }}
-          projects: "packages/codegen,packages/runtime"
-
   install:
     name: Install node modules
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7.13.6
+      - uses: pnpm/action-setup@v3
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
           check-latest: true
           cache: pnpm
       - name: Install all packages
@@ -44,19 +32,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7.13.6
+      - uses: pnpm/action-setup@v3
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
           check-latest: true
           cache: pnpm
       - name: Install all packages
         run: pnpm install
       - name: Run eslint
-        run: pnpx eslint ./ --max-warnings 0
+        run: pnpm eslint ./ --max-warnings 0
 
   build:
     name: Build packages
@@ -64,13 +50,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7.13.6
+      - uses: pnpm/action-setup@v3
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
           check-latest: true
           cache: pnpm
       - name: Install all packages
@@ -84,13 +68,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7.13.6
+      - uses: pnpm/action-setup@v3
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
           check-latest: true
           cache: pnpm
       - name: Install all packages

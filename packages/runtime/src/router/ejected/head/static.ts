@@ -7,7 +7,7 @@ import type {
   Params,
   ParamType,
   RuntimeNext
-} from "next-app-middleware/runtime";
+} from "@cxnpl/next-app-middleware/runtime";
 import { ResponseCookies } from "next/dist/server/web/spec-extension/cookies";
 import { NextMiddleware, NextResponse } from "next/server";`;
 

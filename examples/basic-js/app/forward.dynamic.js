@@ -1,5 +1,5 @@
 /**
- * @type {import("next-app-middleware/runtime").DynamicForwarder}
+ * @type {import("@cxnpl/next-app-middleware/runtime").DynamicForwarder}
  */
 export const locale = () => {
   return "en";

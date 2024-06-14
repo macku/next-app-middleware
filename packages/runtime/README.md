@@ -1,3 +1,3 @@
-# @next-app-middleware/runtime
+# @cxnpl/next-app-middleware-runtime
 
-Runtime types and ejected router for `next-app-middleware`
+Runtime types and ejected router for `@cxnpl/next-app-middleware`

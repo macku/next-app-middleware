@@ -1,4 +1,7 @@
-# next-app-middleware
+# @cxnpl/next-app-middleware
+
+# [!IMPORTANT]
+# This project is a fork of the [next-app-middleware](https://github.com/whopio/next-app-middleware) project.
 
 next.js uses your filesystem structure to route requests to pages, why should you have to manually route middleware?
 
@@ -93,19 +96,19 @@ In this setup the middleware will only run if the request path is matching a pag
 pnpm
 
 ```
-pnpm install next-app-middleware --save-dev
+pnpm install @cxnpl/next-app-middleware --save-dev
 ```
 
 yarn
 
 ```
-yarn add next-app-middleware --dev
+yarn add @cxnpl/next-app-middleware --dev
 ```
 
 npm
 
 ```
-npm install next-app-middleware --save-dev
+npm install @cxnpl/next-app-middleware --save-dev
 ```
 
 ### clean up current middleware and git working tree
@@ -118,12 +121,10 @@ npm install next-app-middleware --save-dev
 ### next.config.js
 
 ```js
-const { withMiddleware } = require("next-app-middleware");
+const { withMiddleware } = require("@cxnpl/next-app-middleware");
 
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  // your next.js config
 };
 
 module.exports = withMiddleware(nextConfig);
