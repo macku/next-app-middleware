@@ -56,7 +56,7 @@ jobs:
       - name: Install all packages
         run: pnpm install
       - name: Run eslint
-        run: pnpx eslint ./ --max-warnings 0
+        run: pnpm eslint ./ --max-warnings 0
 
   build:
     name: Build packages
