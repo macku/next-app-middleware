@@ -1,7 +1,7 @@
 # @cxnpl/next-app-middleware
 
-# [!IMPORTANT]
-# This project is a fork of the [next-app-middleware](https://github.com/whopio/next-app-middleware) project.
+> [!IMPORTANT]
+> This project is a fork of the [next-app-middleware](https://github.com/whopio/next-app-middleware) project.
 
 next.js uses your filesystem structure to route requests to pages, why should you have to manually route middleware?
 
