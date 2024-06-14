@@ -1,4 +1,4 @@
-import { DynamicForwarder } from "next-app-middleware/runtime";
+import { DynamicForwarder } from "@cxnpl/next-app-middleware/runtime";
 
 export const theme: DynamicForwarder = (req, res) => {
   const themeCookie = req.cookies.get("__theme");

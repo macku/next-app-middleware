@@ -1,4 +1,4 @@
-import { RouterHooksConfig } from "@next-app-middleware/runtime/dist/router/ejected";
+import { RouterHooksConfig } from "@cxnpl/next-app-middleware-runtime/dist/router/ejected";
 import _glob from "glob";
 import { promisify } from "util";
 import logger from "../util/log";

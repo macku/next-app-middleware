@@ -1,1 +1,1 @@
-export * from "@next-app-middleware/runtime";
+export * from "@cxnpl/next-app-middleware-runtime";

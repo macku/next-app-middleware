@@ -1,4 +1,4 @@
-import type { RewriteHandler } from "next-app-middleware/runtime";
+import type { RewriteHandler } from "@cxnpl/next-app-middleware/runtime";
 
 const rewrite: RewriteHandler<{ theme: string }> = ({ params: { theme } }) => {
   return "/" + theme;

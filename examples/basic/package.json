@@ -1,5 +1,5 @@
 {
-  "name": "@next-app-middleware/basic-example",
+  "name": "@cxnpl/next-app-middleware-basic-example",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -21,6 +21,6 @@
     "@types/node": "^17.0.45",
     "eslint-config-next": "13.1.6",
     "eslint-config-ts": "workspace:^0.0.0",
-    "next-app-middleware": "workspace:0.0.0"
+    "@cxnpl/next-app-middleware": "workspace:0.0.0"
   }
 }

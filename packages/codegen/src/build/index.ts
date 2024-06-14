@@ -1,7 +1,7 @@
 import {
   Imports,
   renderRouter,
-} from "@next-app-middleware/runtime/dist/router/ejected";
+} from "@cxnpl/next-app-middleware-runtime/dist/router/ejected";
 import { transform } from "@swc/core";
 import fse from "fs-extra";
 import { join } from "path";

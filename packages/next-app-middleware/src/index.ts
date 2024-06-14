@@ -1,5 +1,5 @@
 import { NextConfig } from "next";
-import { prod, dev } from "@next-app-middleware/codegen";
+import { prod, dev } from "@cxnpl/next-app-middleware-codegen";
 import { PHASE_DEVELOPMENT_SERVER } from "next/dist/shared/lib/constants";
 
 export const withMiddleware =

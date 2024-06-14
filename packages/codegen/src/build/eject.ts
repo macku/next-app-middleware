@@ -2,7 +2,7 @@ import {
   Branch,
   BranchTypes,
   PathSegmentSwitch,
-} from "@next-app-middleware/runtime/dist/router/ejected";
+} from "@cxnpl/next-app-middleware-runtime/dist/router/ejected";
 import { FlattenedRoute, RouteTypes, SegmentLayout } from "../types";
 
 type MatcherMap = Map<string, FlattenedRoute | MatcherMap | true>;

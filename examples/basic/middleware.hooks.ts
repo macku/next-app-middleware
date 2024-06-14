@@ -3,7 +3,7 @@ import type {
   ErrorHook,
   GenericHook,
   ParamsHook,
-} from "next-app-middleware/runtime";
+} from "@cxnpl/next-app-middleware/runtime";
 import { NextResponse } from "next/server";
 
 export const response: ResponseHook = (res) => {

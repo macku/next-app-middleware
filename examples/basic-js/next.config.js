@@ -1,4 +1,4 @@
-const { withMiddleware } = require("next-app-middleware");
+const { withMiddleware } = require("@cxnpl/next-app-middleware");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
