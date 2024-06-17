@@ -12,6 +12,7 @@
       "outputs": ["*.d.ts", "*.d.ts.map", "*.js", "*.js.map"]
     },
     "lint": {
+      "dependsOn": ["build"],
       "outputs": []
     },
     "dev": {

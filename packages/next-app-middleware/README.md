@@ -339,11 +339,20 @@ export const params: ParamsHook = (params) => {
 
 #### response
 
-This hook will receive the final response and does not allow for editing it, it will be executed in the `waitUntil` method of the `NextFetchEvent`:
+This hook will receive the final response (`NextResponse`) and does allow for any final editing of the response before it is sent:
 
 ```ts
-export const response: ResponseHook = (response) => {
+export const response: ResponseHook = (finalResponse) => {
   // collect metrics in here
+};
+```
+
+or 
+
+```ts
+export const response: ResponseHook = (finalResponse) => {
+  // Modify the response e.g. add a custom header
+  finalResponse.headers.set("x-custom-header", "value");
 };
 ```
 
