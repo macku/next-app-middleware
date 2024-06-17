@@ -51,8 +51,8 @@ Object.defineProperty(res, "cookies", {
     internals.cookies ||
     (internals.cookies = new ResponseCookies(res.headers)),
 });
-let middleware_response: MiddleWareHandlerResult | undefined = undefined;
-let response: NextResponse | undefined = undefined;
+let middleware_response: MiddleWareHandlerResult | void;
+let response: NextResponse | void;
 let next: RuntimeNext = undefined;
 let notFound = false;
 let external = false;

@@ -110,7 +110,7 @@ internals.responseHeaders !== undefined &&
 ${
   response
     ? `
-ev.waitUntil(Promise.resolve(responseHook(response.clone())));
+response = await responseHook(response.clone());
 `
     : ""
 }
