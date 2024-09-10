@@ -29,6 +29,7 @@ const watchConfig = {
     "app/**/redirect.{ts,js}",
     "public/**/*",
     "app/favicon.ico",
+    "app/robots.ts",
   ],
   "add unlink change": [
     "app/**/forward.dynamic.{ts,js}",
